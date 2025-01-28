@@ -12,9 +12,16 @@ CSS Reset
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-body{
+body html {
     color: rgba(0, 0, 0, 0.507);
-    overflow-x: hidden;
+    overflow-x: hidden !important;
+}
+
+/* Corrigir escrollamento no Mobile */
+@media (max-width: 786px) {
+    body, html {
+        overflow-x: hidden !important;
+    }
 }
 section{
     padding: 80px 0;
